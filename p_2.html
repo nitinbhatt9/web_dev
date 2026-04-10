@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>example of login form using max tags</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        label{
+            margin-left: 70px;
+        }
+        input[type="text"]{
+            margin-left: 70px;
+        }
+        input[type="email"]{
+           margin-left: 70px;
+        }
+        input[type="password"]{
+          margin-left: 70px;
+        }
+    </style>
+</head>
+<body style="background:linear-gradient(to right,  rgb(217, 50, 164),rgb(209, 21, 172),rgb(134, 42, 183),rgb(137, 45, 180),rgb(72, 45, 189), rgb(42, 108, 199),rgb(36, 142, 181),rgb(48, 168, 195),rgb(55, 185, 185));">
+     <form action="#" method="get" style="border: solid black 2px;height: 630px; fit-content; max-width: fit-content; background-color: rgb(255, 255, 255);">
+        <div>
+            <h1 style="text-align: center; background-color: rgb(205, 225, 225); padding: 16px; margin-top: 0px;">Create Account</h1>
+            <br>
+            <div style="color: rgb(82, 208, 208);">
+            <div>
+                <label for="fname">First name*</label>
+                <label for="fname" style="margin: 164px;">Last name*</label>
+            </div>
+            <div>
+                <input type="text" placeholder="enter your first name">
+                <input type="text" placeholder="enter your last name">
+            </div>
+            <br>
+            <div>
+                <label for="email">Email*</label><br>
+                <input type="email" placeholder="enter your email">
+            </div>
+            <br>
+            <div>
+                <label for="pass">Password*</label>
+                <label for="con_pass" style="margin: 169.5px;">Confirm Password*</label>
+            </div>
+            <div>
+                <input type="password" placeholder="enter your password">
+                <input type="password" placeholder="enter your password again">
+            </div>
+            <br>
+            <div>
+                <label for="gen">Gender:</label>
+                <label for="gen" style="margin: 189px;">Hobbies</label>
+            </div>
+            <div style="padding-left: 64px;">
+                <input type="radio"value="m">male
+                <input type="radio" value="m">female
+                <input type="checkbox" id="Music" style="margin-left: 126px;">Music
+                <input type="checkbox" id="Sports">Sports
+                <input type="checkbox" id="Travel">Travle
+                <input type="checkbox" id="Movies">Movies
+            </div>
+            <br>
+            <div>
+                <label for="soi">Source of Income</label>
+                <label style="margin-left: 126px;">Income</label>
+            </div>
+            <div>
+                <input type="number" placeholder="Employed" name="employed" style="margin-left: 68px;">
+                <input type="range" 20k style="margin-left: 72px;">
+                <label style="margin-left: -2px; padding: 5px; background-color: rgb(51, 201, 201);color: rgb(244, 242, 240);height: 20px;">20k</label>
+            </div>
+            <br>
+            <div>
+                <label>Upload Profile Picture</label>
+                <label style="margin-left: 95px;">Age</label>
+            </div>
+            <div>
+                <input type="file" style="margin-left: 66px; cursor: pointer;">
+                <input type="num" minlength="18" maxlength="60" style="margin-left: -10px ;">
+            </div>
+            <br>
+            <div>
+                <label>Bio</label><br>
+                <textarea name="Bio" id="bio" cols="45" rows="5" style="margin-left: 64px;"></textarea>
+            </div>
+            <br>
+            </div>
+            <div style="text-align: end; padding-right: 30px;">
+            <input type="button" value="Creat" style="height: 30px; width: 80px; background-color: aqua; text-align: center; cursor: pointer;">
+            </div>
+            </div>
+     </form>
+</body>
+</html>
