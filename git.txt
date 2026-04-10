@@ -1,0 +1,3 @@
+Branches In Git :-
+
+git branch - this command lists all the branches in the current repo.
