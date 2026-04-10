@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+        div{
+            transition-property: all;
+            transition-duration: 2s;
+            transition-timing-function: linear;
+            transition-delay: 1s;
+            border: solid black 2px;
+            background-color: chartreuse;
+            height: 200px;
+            width: 200px;
+            text-align: center;
+        }
+        div:hover{
+            font-size: 40px;
+            background-color: red;
+            border-radius: 150px;
+            
+        }
+        div:active{
+            background-color: aqua;
+        }
+    /* pseudo classes (hover: by hovering on it and active: through clicking) */
+    </style>
+</head>
+<body>
+    <div>Box 1</div>
+</body>
+</html>
