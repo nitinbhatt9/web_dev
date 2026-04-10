@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+  body { height: 2000px;  padding-top: 50px; }
+
+  /*  STATIC: Default position */
+  .static-box {
+    position: static;
+    border: 5px solid blue;
+    background-color: skyblue;
+    padding: 6px;
+    margin-bottom: 20px;
+  }
+
+  /*  RELATIVE: Change from normal position without affecting layout */
+  .relative-box {
+    position: relative;
+    top: 20px;
+    left: 40px;
+    background-color: lightgreen;
+    border: 5px solid green;
+    padding: 10px;
+  }
+
+  /*  ABSOLUTE: Relative to the nearest 'relative' or 'fixed' ancestor */
+  .container { 
+    position: relative; 
+    height: 120px; 
+    border: 5px solid gray;
+    background-color: lightgray;
+    margin-top: 50px; 
+  }
+  .absolute-box {
+    position: absolute;
+    border: 5px solid red;
+    background-color: lightcoral;
+    margin-left: 350px;  
+}
+
+  /*  FIXED: Stays in the same spot */
+  .fixed-box {
+    position: fixed;
+    margin-top: -57px;
+    width: 1480px;
+    height: 40px;
+    background-color: rgb(15, 2, 2);
+    color: white;
+    /* text-align: right; */
+    padding: 10px;
+  }
+
+  /*  STICKY: Sticks as scroller*/
+  .sticky-box {
+    position: sticky;
+    top: 50px; /* Sticks 50px from the top when scrolling */
+    background-color:rgb(213, 213, 81);
+    padding: 15px;
+    border: 5px solid yellow;
+  }
+</style>
+</head>
+<body>
+
+  <div class="fixed-box">FIXED: Stays on top of screen</div>
+
+  <div class="static-box">
+    <p>STATIC:</p> This is the default.</div>
+
+  <div class="relative-box">
+    <p>RELATIVE:</p> Moved 20px down and 40px right from my position.
+  </div>
+
+  <div class="container">
+    Container (Relative)
+    <div class="absolute-box"><p>ABSOLUTE:</p> Stuck to the bottom-right corner of container </div>
+  </div>
+
+  <div class="sticky-box">
+    <p>STICKY:</p> Scroll down! It will stick on top only.
+  </div>
+
+  <p style="margin-top: 100px;">Scroll to see <b>Sticky</b> and <b>Fixed</b> behaviors in action...</p>
+
+</html>
