@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alingnment of Form</title>
+    <style>
+        div{
+            padding-left: 300px;
+            background-color: rgb(165, 244, 237);
+            text-align: left ;
+        }
+        h2{
+            background-color: rgb(62, 156, 224);
+            text-decoration: solid;
+            border-radius: 40px;
+            border-style:dashed;
+            padding-left: 100px;
+            margin-right:690px;
+        }
+        input[type="texts"]{
+            margin-left: 80px;
+            padding-left: 50px;
+            border-radius: 20px;
+            border-width:5px;
+        
+        }
+        input[type="number"]{
+            margin-left: 34px;
+            padding-left: 50px;
+            border-radius: 20px;
+            border-width:5px;
+        }
+        input[type="text"]{
+            margin-left: 20px;
+            padding-left: 50px;
+            border-radius: 20px;
+            border-width:5px;
+        }
+        input[type="email"]{
+            margin-left: 60px;
+            padding-left: 50px;
+            border-radius: 20px;
+            border-width:5px;
+        }
+        input[type="date"]{
+            margin-left: 90px;
+            padding-left: 100px;
+            border-radius: 20px;
+            border-width:5px;
+        }
+        input[type="password"]{
+            margin-left: 53px;
+            padding-left: 50px;
+            border-radius: 20px;
+            border-width:5px;
+        }
+        input[type="submit"]{
+            margin-left: 0px;
+            padding: 7px;
+            padding-left: 12px;
+            background-color: rgb(100, 141, 238);
+            border-width:5px;
+        }
+        input[type="radio"]{
+            margin-left: 60px;  
+        }
+
+        input[type="checkbox"]{
+            margin-left: 70px; 
+        }
+
+        body{
+            background-color: rgb(152, 226, 216);
+            text-align: left;
+            text-decoration: underline ;
+        }
+        form{
+            border: 12px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="#" method="get">
+        <div>
+            <h2><b>STUDENT's INFORMATION<b></h2>
+        </div>
+        <br>
+        <div>
+            <label><i>Enter Your Name<i>:</label>
+        <input type="texts" Name="name" value="" placeholder="enter name"/>
+        </div>
+        <br>
+        <div>
+            <label><i>Enter Your Roll Number<i>:</label>
+        <input type="number" Name="num" value="" placeholder="enter roll number"/>
+        </div>
+        <br>
+        <div>
+            <label><i>Enter Your Father's Name<i>:</label>
+        <input type="text" Name="fname" value="" placeholder="enter father's name"/>
+        </div>
+        <br>
+        <div>
+            <label><i>Enter Your Email Id<i>:</label>
+        <input type="email" Name="em" value="" placeholder="enter email id"/>
+        </div>
+        <br>
+        <div>
+            <b><span style="color:rgb(2, 0, 0)">
+                    <th>Note:</th>
+                </span> <span style="color:rgb(245, 101, 209)">More advanced code editors like VS Code<br> Sublime Text, or
+                    Dreamweaver have built-in the<br> features (often using Emmet) that allow you to<br> type lorem and
+                    press Tab to automatically generate <br>the text. This functionality is not available in the
+                    <br>basic Windows Notepad program Lorem ipsum dolor <br>sit, amet consectetur adipisicing elit. Debitis <br>tenetur earum sunt eum sit cupiditate, expedita <br>cumque distinctio minus dignissimos recusandae. <br> Quae doloremque porro ab! Tempora consectetur libero <br>vel ducimus.</spam></b>
+        </div>
+        <br>
+        <div>
+            <label><i>Enter Your Dob<i>:</label>
+        <input type="date" Name="d"/>
+        </div>
+        <br>
+        <div>
+            <label><i>Enter Your Password<i>:</label>
+        <input type="Password" Name="pass" value="" placeholder="enter your password"/>
+        </div>
+        <br>
+        <div>
+            <label><i>Specify Your Gender<i>:</label>
+        <input type="radio" name="m"/> male
+        <input type="radio" name="m" value=""/> female
+        </div>
+        <br>
+        <div>
+            <label><i>Select Your Course<i>:</label>
+        <input type="checkbox" Name="a" value=""/>
+        <input type="checkbox" Name="b" value=""/>
+        <input type="checkbox" Name="c" value=""/>
+        </div>        
+        <br> 
+        <div>
+            <input type="submit"></input>
+        </div>
+    </form>
+
+</body>
+
+</html>
