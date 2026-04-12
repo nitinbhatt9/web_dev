@@ -1,3 +1,14 @@
 Branches In Git :-
 
-git branch - this command lists all the branches in the current repo.
+git branch - this command lists all the branches in the current repository.
+git branch (name of branch) - this command creats a new branch called bug-fix. 
+git switch (name of branch) - this command switches to the other branch.
+git log - this command shows the commit history for the current branch.
+git switch main - this command switches to the main branch.
+git switch -c (name of branch) - this command creates a new branch -c is used to create a new branch
+
+rename a branch
+git branch -m (old branch name) (new branch name)
+
+delete a branch
+git branch -d (branch-name)
