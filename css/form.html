@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loginpage</title>
+    <style>
+        body {
+            background-image: url(deer.jpg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+
+        form {
+            border: 2px solid white;
+            border-radius: 20px;
+            height: 400px;
+            width: 350px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: black
+        }
+
+        h3 {
+            color: white;
+            padding: 10px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        h2 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            transition-duration: 500ms;
+        }
+        
+        h2:hover{
+                  color: red;
+        }
+
+        input {
+            display: flex;
+
+        }
+
+        .design {
+            padding: 20px;
+            color: white;
+        }
+
+        #login {
+            margin-top: 25px;
+            margin-left: 45px;
+            font-size: 19px;
+            text-align: center;
+            border: 1px solid white;
+            height: 30px;
+            width: 250px;
+            transition-duration: 500ms;
+            cursor: pointer;
+        }
+
+        #login:hover {
+            background-color: rgba(0, 0, 255, 0.13);
+            font-size: 21px;
+
+        }
+
+        .forget {
+            color: red;
+            transition-duration: 500ms;
+            cursor: pointer;
+        }
+
+        .forget:hover {
+            color: blue;
+            font-size: 20px;
+        }
+
+        .home {
+            transition-duration: 400ms;
+        }
+
+        .home:hover {
+            border: 1px solid white;
+            height: 25px;
+            width: 45px;
+            display: flex;
+            justify-content: center;
+            background-color: rgba(0, 0, 255, 0.358);
+            cursor: pointer;
+        }
+
+        #service {
+            transition-duration: 400ms;
+        }
+
+        #service:hover {
+            border: 1px solid white;
+            height: 25px;
+            width: 60px;
+            display: flex;
+            justify-content: center;
+            background-color: rgba(0, 0, 255, 0.296);
+            cursor: pointer;
+        }
+        .register{
+            transition-duration: 500ms;
+        }
+        .register:hover{
+            color: red;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3>NAYAN</h3>
+
+    <div style="display: flex; gap: 50px; margin-top: -40px; margin-left: 750px; color: white; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+        <div class="home">Home</div>
+        <div class="home">About</div>
+        <div id="service">Services</div>
+        <div id="service">Contact</div>
+        <div class="home">Login</div>
+    </div>
+
+<div style="display: flex; justify-content: center; padding: 50px; ">
+    <form action="">
+
+        <h2 style="display: flex; justify-content: center; font-size: 35px;">Login</h2>
+
+        <div class="design">
+            <div>
+                <label for="">Email</label>
+                <input type="email" placeholder="email">
+            </div>
+            <div>
+                <label for="">Password</label>
+                <input type="password" placeholder="password">
+            </div>
+        </div>
+
+        <br>
+
+        <div style="display: flex; padding: 10px;">
+            <input type="checkbox">Remember me
+            <div style="margin-left: 50px;">
+                <label class="forget"> Forget password?</label>
+            </div>
+        </div>
+
+        <div id="login">
+            <label>Login</label>
+        </div>
+
+        <br>
+
+        <div style="margin-left: 50px; color: white;">
+        <label > Don't have an account?</label>
+        <label class="register">Register</label>
+        </div>
+
+    </form>
+</div>
+</body>
+
+</html>
