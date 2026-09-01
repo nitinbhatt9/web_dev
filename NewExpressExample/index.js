@@ -4,30 +4,30 @@ const app = express();
 
 const PORT = 3000;
 
-// app.get("/car-basic", (req, res) => {
-//   res.send({
-//     1: "Toyota",
-//     2: "Honda",
-//     3: "Ford",
-//     4: "Maruti",
-//     5: "Suzuki",
-//     6: "Hyundai",
-//     7: "Volkswagen",
-//     8: "Nissan",
-//     9: "BMW",
-//     10: "Audi",
-//     11: "Land-Rover",
-//     12: "Volvo",
-//     13: "Lexus",
-//     14: "Rolls-Royce",
-//     15: "Bentley",
-//     16: "Lexus",
-//     17: "Porsche",
-//     18: "Mercedes-Benz",
-//     19: "Jaguar",
-//     20: "Astin-Martin",
-//   });
-// });
+app.get("/car-basic", (req, res) => {
+  res.send({
+    1: "Toyota",
+    2: "Honda",
+    3: "Ford",
+    4: "Maruti",
+    5: "Suzuki",
+    6: "Hyundai",
+    7: "Volkswagen",
+    8: "Nissan",
+    9: "BMW",
+    10: "Audi",
+    11: "Land-Rover",
+    12: "Volvo",
+    13: "Lexus",
+    14: "Rolls-Royce",
+    15: "Bentley",
+    16: "Lexus",
+    17: "Porsche",
+    18: "Mercedes-Benz",
+    19: "Jaguar",
+    20: "Astin-Martin",
+  });
+});
 
 app.get("/car-details", (req, res) => {
   res.json([
