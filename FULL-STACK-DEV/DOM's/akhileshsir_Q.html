@@ -1,0 +1,191 @@
+<!-- <!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom Example_1</title>
+</head>
+
+<body>
+    <p id="Change">Click On The Button Below...!!!</p>
+    <button onclick="ChangeColour()">Click On Me</button>
+
+    <script>
+        let currentColor = "none";
+        function ChangeColour() {
+
+            let bodystyle = document.body.style;
+            let currentColor = bodystyle.backgroundImage;
+
+
+            if (currentColor === "red") {
+                bodystyle.backgroundImage = "linear-gradient(to right, #00c6ff, #0072ff)";
+                console.log("change to blue gradient");
+                currentColor = "blue";
+            }
+            else if (currentColor === "blue") {
+                bodystyle.backgroundImage = "linear-gradient(to right, #11998e, #38ef7d)";
+                console.log("change to green gradient");
+            }
+            else if (currentColor === "green") {
+                bodystyle.backgroundImage = "linear-gradient(to right, #ffe259, #ffa751)";
+                console.log("change to yellow gradient");
+            }
+            else if (currentColor === "yellow") {
+                bodystyle.backgroundImage = "linear-gradient(to right, #232526, #414345)";
+                console.log("change to black gradient");
+            }
+            else if (currentColor === "black") {
+                bodystyle.backgroundImage = "linear-gradient(to right, #ece9e6, #ffffff)";
+                console.log("change to white gradient");
+            }
+            else if (currentColor === "white") {
+                bodystyle.backgroundImage = "linear-gradient(to right, #ff9a9e, #fecfef)";
+                console.log("change to pink gradient");
+            }
+            else if (currentColor === "pink") {
+                bodystyle.backgroundImage = "linear-gradient(to right, #808080, #3f3f44)";
+                console.log("change to grey gradient");
+            }
+            else if (currentColor === "grey") {
+                bodystyle.backgroundImage = "linear-gradient(to right, #7303c0, #ec38bc)";
+                console.log("change to purple gradient");
+            }
+            else if (currentColor === "purple") {
+                bodystyle.backgroundImage = "linear-gradient(to right, #ff416c, #ff4b2b)";
+                console.log("change to orange gradient");
+            }
+            else if (currentColor === "orange") {
+                bodystyle.backgroundImage = "linear-gradient(to right, #89f7fe, #66a6ff)";
+                console.log("change to skyblue gradient");
+            }
+            else if (currentColor === "skyblue") {
+                bodystyle.backgroundImage = "linear-gradient(to right, #a8ff78, #78ffd6)";
+                console.log("change to lightgreen gradient");
+            }
+            else {
+                bodystyle.backgroundImage = "linear-gradient(to right, #ff0844, #ffb199)";
+                console.log("changed to red gradient");
+            }
+            if (currentColor === "red") {
+                bodystyle.backgroundColor = "blue";
+                console.log("change to blue");
+            }
+            else if (currentColor === "blue") {
+                bodystyle.backgroundColor = "green";
+                console.log("change to green");
+            }
+            else if (currentColor === "green") {
+                bodystyle.backgroundColor = "yellow";
+                console.log("change to yellow");
+            }
+            else if (currentColor === "yellow") {
+                bodystyle.backgroundColor = "black";
+                console.log("change to black");
+            }
+            else if (currentColor === "black") {
+                bodystyle.backgroundColor = "white";
+                console.log("change to white");
+            }
+            else if (currentColor === "white") {
+                bodystyle.backgroundColor = "pink";
+                console.log("change to pink");
+            }
+            else if (currentColor === "pink") {
+                bodystyle.backgroundColor = "grey";
+                console.log("change to grey");
+            }
+            else if (currentColor === "grey") {
+                bodystyle.backgroundColor = "purple";
+                console.log("change to purple");
+            }
+            else if (currentColor === "purple") {
+                bodystyle.backgroundColor = "orange";
+                console.log("change to orange");
+            }
+            else if (currentColor === "orange") {
+                bodystyle.backgroundColor = "skyblue";
+                console.log("change to skyblue");
+            }
+            else if (currentColor === "skyblue") {
+                bodystyle.backgroundColor = "lightgreen";
+                console.log("change to lightgreen");
+            }
+            else {
+                bodystyle.backgroundColor = "red";
+                console.log("changed to red");
+            }
+        }
+    </script>
+</body>
+
+</html> 
+ -->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom Example_1</title>
+    <style>
+        /* Smooth transition effect when colors switch */
+        body {
+            transition: background 2s ease;
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <p style="color:rgb(245, 245, 245); background-color: #000000;" id="Change">Click On The Button
+        Below...!!!</p>
+    <button style="border:solid black 5px; border-radius: 40px;" onclick="ChangeColour()">Click On Me</button>
+
+    <script>
+        // Array of all your beautiful gradients
+        const gradients = [
+            "linear-gradient(135deg, #f857a6, #ff5858)", // 0: Red/Coral
+            "linear-gradient(135deg, #1e3c72, #2a5298)", // 1: Blue
+            "linear-gradient(135deg, #11998e, #38ef7d)", // 2: Green
+            "linear-gradient(135deg, #ffe259, #ffa751)", // 3: Yellow/Gold
+            "linear-gradient(135deg, #000000, #434343)", // 4: Black/Dark Charcoal
+            "linear-gradient(135deg, #ffffff, #ece9e6)", // 5: White/Soft Silver
+            "linear-gradient(135deg, #ff9a9e, #fecfef)", // 6: Pink
+            "linear-gradient(135deg, #8e9eab, #eef2f3)", // 7: Grey/Platinum
+            "linear-gradient(135deg, #6441a5, #2a0845)", // 8: Purple
+            "linear-gradient(135deg, #ff416c, #ff4b2b)", // 9: Orange/Sunset
+            "linear-gradient(135deg, #89f7fe, #66a6ff)", // 10: Skyblue
+            "linear-gradient(135deg, #a8ff78, #78ffd6)"  // 11: Lightgreen
+        ];
+
+        // Keep track of the current index position
+        let currentIndex = 0;
+
+        // Set the initial background to Red/Coral right when the page loads
+        document.body.style.backgroundImage = gradients[currentIndex];
+
+        function ChangeColour() {
+            let bodystyle = document.body.style;
+
+            // Move to the next color in the array. 
+            // The '%' operator resets the index back to 0 when it reaches the end.
+            currentIndex = (currentIndex + 1) % gradients.length;
+
+            // Apply the new gradient
+            bodystyle.backgroundImage = gradients[currentIndex];
+
+            console.log("Changed to gradient index: " + currentIndex);
+        }
+    </script>
+</body>
+
+</html>

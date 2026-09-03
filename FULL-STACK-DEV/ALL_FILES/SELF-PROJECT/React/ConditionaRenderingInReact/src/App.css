@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+
+.h_clicks{
+    color:white;display: flex;font-weight: bolder;display: "flex";align-items: center; margin-left: "50px";
+}
+.h_clicks:hover{
+    cursor: pointer;text-decoration: underline; color: red;
+}

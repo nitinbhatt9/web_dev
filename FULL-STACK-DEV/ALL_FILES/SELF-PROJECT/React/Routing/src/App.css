@@ -1,0 +1,14 @@
+body{
+    background-color: black;
+}
+.btn_top{
+    font-size:"60px";
+    background-color: white;
+    color: black;
+    font-weight: 900;
+}
+.btn_top:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}

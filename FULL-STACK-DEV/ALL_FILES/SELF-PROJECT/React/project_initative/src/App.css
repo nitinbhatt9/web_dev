@@ -1,0 +1,236 @@
+/* css styling for header top */
+.headerfixedtop{
+  background-color: black;
+  height: 40px;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  display: flex;
+  justify-content: space-between;}
+
+/* header icon left */
+.headerinnerleft{
+  height: 93%;
+  gap: 15px;
+  align-items: center;}
+.icon{
+  color:cornsilk;
+  font-size: 12px;
+  min-height: 20px;
+  min-width: 28px;
+  padding: 10px;}
+.icon:hover{
+  cursor: pointer;
+  background-color: darkgray;
+  color: black;}
+
+/* header icon right */
+.headerinnerright{
+  height: 93%;
+  gap: 15px;
+  align-items: center;}
+.icons{
+  color:cornsilk;
+  font-size: 12px;
+  min-height: 20px;
+  min-width: 28px;
+  padding: 10px;}
+.icons:hover{
+  cursor: pointer;
+  background-color: darkgray;
+  color: black;}
+
+
+/* css styling for firstpage */
+
+.wblockafterheader{
+  padding: 0px;
+  margin: 40px 0px 0px 0px;
+  height: 200px;
+  background-color: white;
+} 
+.wblocktext1{
+  display: flex;
+  justify-content: center; 
+  padding: 40px 0px 0px 0px;
+  font-size: 60px;
+  font-family: revert;
+}
+.wblocktext2{
+  display: flex;
+  justify-content: center; 
+  padding: 20px 0px 0px 0px;
+  font-size: 18px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+.imagetop{
+  height: auto;
+  width: 100%;
+  display: block;
+  position: absolute;
+}         
+.imagetext1{
+  font-size: 40px;
+  color: white;
+  font-family: ui-sans-serif;
+  position: relative;
+  top: 400px;
+  margin-left: 20px;
+}       
+.imagetext2{
+  font-size: 70px;
+  color: white;
+  font-family: ui-sans-serif;
+  position: relative;
+  top: 450px;
+  margin-left: 20px;
+}       
+.button1{
+  font-size: 18px;
+  padding: 20px 20px;
+  font-family: ui-sans-serif;
+  position: relative;
+  top: 500px;
+  margin-left: 20px;
+  background-color: white;
+}            
+.button1:hover{
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+
+
+.midpagetop{
+  height: 1700px;
+  width: auto;
+  margin-top: 830px;
+  padding: -5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.midpageouterbox{ 
+  height: 1100px;
+  width: 59%;
+  margin: 0px; 
+  background-color: lightgray;
+  /* border: 2px solid red; */
+}
+.midpagetitle1{ 
+  text-align: center;
+  text-shadow: 3px 3px gray , -1px -1px white;
+  font-size: 28px;
+  font-weight: 800;
+  font-family: sans-serif;
+}
+.midpagetitle2{
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  font-family: serif;
+  text-wrap: auto;
+}
+.midpageimageouting{
+  display: flex;
+  justify-content: space-around;
+  /* border: 2px solid blue; */
+}
+.midpageimg{
+  height: 560px;
+  width: 92%;
+}
+.midpageimgtextouter{
+  text-wrap: auto;
+  margin: 0px 30px 0px 0px; 
+}
+.midpageimgtext{
+  font-size: 18px;  
+}
+.midpageaftertextouter{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 610px;
+  margin-top: 30px;
+}
+.midpagelike{
+  height: 40px;
+  width: 80px;
+  background-color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 30px;
+}
+.midpagelike:hover{
+  cursor: pointer;
+  color: white;
+  background-color: black;
+}
+.midpagereply{
+  height: 40px;
+  width: 120px;
+  color: white;
+  font-size: 16px;
+  background-color: black;
+  font-weight: 700; 
+  border-radius: 30px;
+}
+.midpagereply2{
+  padding: 4px 8px;
+  background-color: white;
+  color: black;  
+}
+
+
+.midpagerightdiv{
+  height: 1100px;
+  width: 35%;
+  padding: 0px 20px 0px 20px;
+  /* border: 2px solid yellow; */
+  background-color: lightgray;
+}
+
+.midpagerightouterbox1{
+  height: 400px;
+  width: 528px;
+  margin: 20px 0px 0px 0px;
+}
+.midpagerightinnerboxtop{
+  /* border: 1px solid blue; */
+  height: 65px ;
+  background-color: black;
+  color: white;
+  align-content: center;
+  text-align: center; 
+}
+.midpagerightinnerbox{
+  border: 1px solid darkgray;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  background-color: whitesmoke;
+}
+.midpagerightinnerbox:hover{
+  cursor: pointer;
+  background-color: lightgray;   
+}
+.midpagerightinnerbox2{
+  width: 15%;  
+}
+.midpagerightinnerboximg{
+  height: 75%;
+  width: 75%;
+  margin: 12px; 
+}
+.midpagerightinnerbox3{
+  width: 85%;
+  align-content: center;
+  padding-left: 20px;
+  font-size: 24px;
+}
+.innert{
+  font-size: 18px;
+}

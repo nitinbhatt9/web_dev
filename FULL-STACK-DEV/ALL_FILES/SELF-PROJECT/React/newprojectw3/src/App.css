@@ -1,0 +1,649 @@
+h2 {
+  text-align: center;
+}
+
+/* styling of header section */
+.headertop{
+  height: 80px;
+  display: flex;
+  flexDirection: row;
+}
+.headertop2{
+  position: fixed;
+  top: 0px;
+  height: 90px;
+  width: 1600px;
+  font-size: 40px;
+  align-content: center;
+  padding-left: 30px;
+  color: darkgreen;
+  font-weight: 900;
+  font-family:sans-serif;
+  background-color: #fff;
+} 
+
+.logotop{
+  display: inline-flex;
+  align-items: center;
+  transition: 0.9s;
+}
+.logotop:hover{
+  cursor: pointer;
+  transform: scale(2) rotate(720deg);
+}
+.headertop3{
+  position: fixed;
+  top: 5px;
+  height: 110px;width: 800px;
+  margin-left: 990px;
+  font-size: 14px;
+  align-content: center;
+  display: flex;
+  flex-direction: row;
+  margin-top: -25px;
+  background-color: white;
+}
+.headerabout a{
+  color:inherit;
+  text-decoration: none;
+}
+.headerabout{
+  height: 95px;
+  width: 105px;
+  align-content: center;
+  text-align: center;
+  padding-top: 2px;
+}
+.headerabout:hover{
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+.headerteam a{
+  color:inherit;
+  text-decoration: none;
+}
+.headerteam{
+  height: 97px;
+  width: 105px;
+  align-content: center;
+  text-align: center;
+}
+.headerteam:hover{
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+.headerwork a{
+  color:inherit;
+  text-decoration: none;
+}
+.headerwork{
+  height: 97px;
+  width: 105px;
+  align-content: center;
+  text-align: center;
+}
+.headerwork:hover{
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+.headerpricing a{
+  color:inherit;
+  text-decoration: none;
+}
+.headerpricing{
+  height: 97px;
+  width: 105px; 
+  align-content: center;
+  text-align: center;
+}
+.headerpricing:hover{
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+.headercontact a{
+  color:inherit;
+  text-decoration: none;
+}
+.headercontact{
+  height: 97px;
+  width: 105px; 
+  align-content: center;
+  text-align: center;
+}
+.headercontact:hover{
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+.headerimg{
+  height: 690px;
+  width: 1513px;
+  margin-top: 10px;
+}
+.headertextstyle{
+    height: 600px;
+    margin-top: -500px;
+    padding-left: 80px;
+}
+.headertextone{
+    font-size: 52px;
+    font-family: monospace;
+    color: white;
+}
+.headertexttwo{
+    color: white;
+    font-size: 18px;
+    font-family: monospace;
+}
+.headerbutton{
+    height: 56px ;
+    padding: 15px 10px;
+    font-size: 20px;
+    color: black;
+    background-color: lightgray;
+}
+.headerbutton:hover{
+    cursor: pointer;
+    background-color: black;
+    color:gold;
+}
+.headericon{
+    color:whitesmoke;
+    margin-top: -200px;
+    padding-left: 80px;
+}
+.headericon:hover{
+    cursor: pointer;
+    color: gold;
+}
+
+
+/* styling of about section */
+.abouttop{
+  margin-top: 150px;
+  height: 600px;
+}
+.abouttextone{
+  font-size: 25px;
+  text-align: center;
+  font-family: inherit; 
+}
+.abouttexttwo{
+  font-size: 18px;
+  text-align: center;
+  font-family: serif; 
+}
+.abouticon{
+  display: flex;
+  justify-content: space-around;
+  font-size: 28px;
+  align-content: center;
+  margin-top: 40px;
+}
+.aboutmidtext{
+  display: flex;
+  align-items: center;
+}
+.aboutlasttext{
+  text-align: center;
+  width: 320px;
+  margin-left: 60px;
+}
+
+
+/* styling of afterabout section */
+.afterabouttop{
+  height: 680px;
+  background-color: lightgrey;
+  display: flex;
+}
+.afteraboutupper{
+  display: flex;
+  flex-direction: column;
+}
+.afteraboutmid{
+  font-size: 29px;
+  padding: 120px 0px 0px 40px;
+  font-family: monospace;
+}
+.afteraboutsecondlast{
+  font-size: 16px;
+  width: 60%;
+  padding: 0px 0px 0px 40px;
+}
+.afteraboutbutton{
+  height: 50px;
+  width: 180px;
+  margin: 0px 0px 0px 40px;
+  background-color: black;
+  color: white;
+  font-family: monospace;
+  font-size: 16px;
+  align-content: center;
+}
+.afteraboutbutton:hover{
+  cursor: pointer;
+  color: gold;
+  text-shadow: 2px 2px red , 0px 0px white;
+}
+.afteraboutimage{
+  height: 400px;
+  width: 700px;
+  border: 0px solid red;
+  margin-right: 40px;
+   border-radius: 120px;           
+}
+
+
+/* styling of team section */
+.teamtop{
+  height: 700px;
+  background-color: whitesmoke;
+}
+.teamsecond{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 100px;
+}
+.teammid{
+  font-size: 20px;
+}
+.teamuppercontent{
+  display: flex;
+  justify-content: space-evenly;
+}
+.teamcontent{
+  height: 500px;
+  width: 350px;
+  border: 1px solid gray;
+  background-color: ghostwhite;
+  box-shadow: 22px solid gray;
+}
+.teamimage{
+  height: 240px;
+  width: 350px;
+}
+.teamname{
+  font-size: 25px;
+  margin-left: 20px;
+}
+.teamdisgnation{
+  color: gray;
+  font-size: 22px ;
+  margin-left: 20px;
+}
+.teamtext{
+  text-align: left;
+  margin-left: 20px;
+  width: 250px;
+}
+.teambutton{
+  margin-left: 20px;
+  height: 28px;
+  width: 320px;
+  background-color: whitesmoke;
+  font-size: 16px;
+  color: gray;
+}
+.teambutton:hover{
+  cursor: pointer;
+  color:black;
+  background-color:darkgray;
+  font-weight: 500;
+}
+
+
+/* styling of afterteam section */
+.lineafterteamtop{
+  height: 200px;
+  width: 100%;
+  background-color: darkgray;
+  margin: 100px 0px;
+  display: flex;
+  justify-content: space-around;
+}
+.lineafterteamtop:hover{
+  background-color: black;
+  color: white;
+}
+.lineafterteaminnerdata{
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  font-family: math;
+  align-content: center; 
+}
+
+
+/* styling work section */
+.worktop{
+  height: 700px;
+}
+.worktext{
+  text-align: center;
+}
+.workstyle1{
+  height: 236px;
+  margin: 40px 0px 20px 0px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.workimg1{
+  height: 235px;
+  width: 350px;
+}
+.workstyle2{
+  height: 236px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.workimg2{
+  height: 235px;
+  width: 350px;
+}
+
+
+/* styling of afterwork section */
+.afterwokrtop{ 
+  display: flex;
+  background-color: whitesmoke;
+  height: 400px;
+}
+.afterwokrnexttotop{
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 46%;
+  padding: 0px 0px 0px 30px;
+}
+.afterworkabovetext{
+  font-size: 30px;
+  margin: 80px 0px 30px 0px;
+}
+.afterworktext{
+  width: 80%;
+}
+.afterworkbelowtext{
+  height: 400px;
+  width: 54%;
+  padding: 0px 0px 0px 50px;
+}
+.afterworkicon{
+  font-family: monospace;
+  font-size: 16px;
+}
+.afterworkbutton1{
+  height: 28px;
+  width: 80% ;
+  background-color: slategray;
+  border: none;
+}
+.afterworkbutton2{
+  height: 28px;
+  width: 75%;
+  background-color: slategray;
+  border: none;
+}
+.afterworkbutton3{
+  height: 28px;
+  width: 65%;
+  background-color: slategray;
+  border: none;
+}
+.afterworkbutton11{
+  height: 28px;
+  width: 20%;
+  background-color: lightgray;
+  border: none;
+}
+.afterworkbutton22{
+  height: 28px;
+  width: 25%;
+  background-color: lightgray;
+  border: none;
+}
+.afterworkbutton33{
+  height: 28px;
+  width: 35%;
+  background-color: lightgrey; 
+  border: none;
+}
+
+
+/* styling of contact section */
+.contacttop{
+  height: 800px;
+}
+.contacttop1{
+  margin: 100px 0px 0px 50px;
+  text-align: center;
+}
+.contacttop2{
+  text-align: center;
+}
+.contacticon{
+  margin: 80px 0px 50px 0px;
+}
+.contactinput{
+  height: 38px;
+  width: 98%;
+  margin: 10px 10px;
+  font-size: 18px;
+}
+.contactbutton{
+  height: 50px;
+  width: 180px;
+  margin: 10px 10px;
+  background-color: white;
+  color: black;
+  border-radius: 30px;
+}
+.contactbutton:hover{
+  background-color: black;
+  color: white;
+}
+
+
+/* styling of pricing section */
+.pricingtop{
+  height: 990px;
+  background-color: gray;
+  text-align: center;
+}
+.pricingtop2{
+  font-size: 30px;
+  padding: 100px 0px 0px 0px;
+  color: white;
+}
+.pricingtop3{
+  font-size: 25px;
+  color: white;
+}
+.pricingmaindiv{
+  height: 800px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.pricingmainboxtop{
+  height: 570px;
+  width: 30%;
+  margin: 40px 0px 0px 0px;
+  background-color: lightgray;
+}
+.pricingmainboxinnertop{
+  border: 1px gray solid;
+  height: 100px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  align-content: center;
+  font-size: 28px;
+}
+.pricingmainboxinnermid{
+  border: 1px gray solid;
+  height: 60px;
+  width: 100%;
+  align-content: center;
+  font-size: 20px;
+}
+.pricingmainboxinnersecondlast{
+  border: 1px gray solid; 
+  height: 130px;
+  width: 100%;
+  align-content: center;
+  font-size: 35px;
+}
+.pricingmainboxinnerlast{
+  border: 1px gray solid;
+  height: 100px;
+  width: 100%;
+  align-content: center;
+  background-color: darkgray;
+}
+.pricingbtn{
+  height: 60px;
+  width: 120px;
+  margin: 10px;
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+}
+.pricingbtn:hover{
+  cursor: pointer;
+  color: white;
+  background-color: black;
+}
+.pricingmaindiv2{
+  height: 640px;
+  width: 30%;
+}
+.pricingmainboxtop2{
+  border: 1px darkgray solid;
+  height: 150px;
+  width: 100%;
+  align-content: center;
+  font-size: 20px;
+  background-color: red;
+  color: white;
+  font-size: 28px;
+}
+.pricingmainboxinnertop2{
+  border: 1px darkgray solid;
+  height: 60px;
+  width: 100%;
+  align-content: center;
+  font-size: 20px;
+}
+.pricingmainboxinnermid2{
+  border: 1px darkgray solid;
+  height: 60px;
+  width: 100%;
+  align-content: center;
+  font-size: 20px;
+}
+.pricingmainboxinnermid2{
+  border: 1px darkgray solid;
+  height: 60px;
+  width: 100%;
+  align-content: center;
+  font-size: 20px;
+}
+.pricingmainboxinnermid2{
+  border: 1px darkgray solid;
+  height: 60px;
+  width: 100%;
+  align-content: center;
+  font-size: 20px;
+}
+.pricingmainboxinnersecondlast2{
+  border: 1px darkgray solid;
+  height: 130px;
+  width: 100%;
+  align-content: center;
+  font-size: 35px;
+}
+.pricingmainboxinnerlast2{
+  border: 1px darkgray solid;
+  height: 110px;
+  width: 100%;
+  align-content: center;
+  background-color: darkgray;
+}
+.pricingmaindiv3{
+  height: 570px;
+  width: 30%;
+  margin: 40px 0px 0px 0px;
+  background-color: lightgray;
+}                                        
+.pricingmainboxtop3{
+  border: 1px gray solid;
+  height: 100px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  align-content: center;
+  font-size: 28px;
+}
+.pricingmainboxinnertop{
+  border: 1px gray solid;
+  height: 60px;
+  width: 100%;
+  align-content: center;
+  font-size: 20px;
+}
+.pricingmainboxinnermid3{
+  border:1px gray solid;
+  height: 60px ;
+  width: 100%;
+  align-content: center;
+  font-size: 20px;
+}
+.pricingmainboxinnermid3{
+  border:1px gray solid;
+  height: 60px ;
+  width: 100%;
+  align-content: center;
+  font-size: 20px;
+}
+.pricingmainboxinnermid3{
+  border:1px gray solid;
+  height: 60px ;
+  width: 100%;
+  align-content: center;
+  font-size: 20px;
+}
+.pricingmainboxinnersecondlast3{
+  border: 1px gray solid;
+  height: 130px;
+  width: 100%;
+  align-content: center;
+  font-size: 35px;
+}
+.pricingmainboxinnerlast3{
+  border: 1px gray solid;
+  height: 100px;
+  width: 100%;
+  align-content: center;
+  background-color: darkgray;
+}
+
+
+/* styling of last section */
+.lastbutton{
+  height: 45px;
+  width: 130px;
+  font-size: 15px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.lastbutton:hover{
+  cursor: pointer;
+}

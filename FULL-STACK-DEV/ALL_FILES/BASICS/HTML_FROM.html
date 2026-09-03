@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>example for creating form</title>
+</head>
+
+<body>
+    <form action="#" method="get">
+        <div>
+            <caption>Form</caption>
+        </div>
+        <div>
+            <label for="username">User's name</label>
+            <input type="text" name="uname" id="uname" placeholder="Enter Name">
+            <br>
+        </div>
+        <div>
+            <label for="pass">password</label>
+            <input type="password" name="pass" id="pass" maxlength="14" placeholder="Enter Password"><br>
+        </div>
+        <div>
+            <label for="sub">Subscribe</label>
+            <input type="checkbox" name="subscribe" value="yes">
+            <br>
+        </div>
+        <div>
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender">Gender
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other's</option>
+                <label>gender</label>
+            </select><br>
+            <div>
+                <textarea name="comments" rows="2" cols="20"></textarea>
+                <br>
+                <label for="resume">Resume</label><br>
+                <input type="file" name="resume">
+                <br>
+                <br>
+                <label for="dob">Date of Birth</label><br>
+                <input type="date" name="dob">
+                <br>
+                <label for="age">Age</label><br>
+                <input type="number" name="age" min="18" max="100" placeholder="Age">
+                <br>
+                <label for="range">Range</label><br>
+                <input type="range" name="volume" min="0" max="100">
+                <br>
+                <label for="email">Email</label><br>
+                <input type="email" name="email" placeholder="Enter Email">
+                <br>
+                <label for="url">Url</label><br>
+                <input type="url" name="website" placeholder="Insert Url">
+                <br>
+                <label for="s">Search</label> <br>  
+                <input type="search" name="query">
+                <br>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

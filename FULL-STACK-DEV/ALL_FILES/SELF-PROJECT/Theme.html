@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dakr Theme</title>
+</head>
+
+<body>
+  <button class="theme" style="border-radius: 20px;">Toddle</button>
+  <h1>Dark Theme Implementation</h1>
+  <p style="text-align: center; width: 500px;">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, dolor quia
+    quisquam veniam amet provident eaque id praesentium quaerat, obcaecati
+    ratione ducimus ullam laborum sunt repellendus ab eius, adipisci
+    voluptatibus?
+  </p>
+  <script>
+    let theme = document.querySelector(".theme");
+
+    let currentTheme = "light";
+
+    theme.addEventListener("click", () => {
+      if (currentTheme == "light") {
+        currentTheme = "dark";
+        console.log("theme", currentTheme);
+        document.body.style.background = "black";
+        document.body.style.color = "white";
+      }
+      else {
+        currentTheme = "light";
+        console.log("theme", currentTheme);
+        document.body.style.background = "white";
+        document.body.style.color = "black";
+      }
+    });
+  </script>
+</body>
+
+</html>

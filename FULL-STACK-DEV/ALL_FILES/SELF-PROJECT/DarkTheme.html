@@ -1,0 +1,170 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toddle Dark Theme</title>
+    <style>
+            body {
+                background-color: white;
+                color: black;
+                font-family: Arial, sans-serif;
+                transition: background-color 0.5s, color 0.5s;
+            }
+            body:hover {
+                background-color: black;
+                color: white;
+            }
+            .dark-theme:hover{
+                background-color: black;
+                color: white;
+                transition: background-color 0.5s, color 0.5s;
+            }
+            button {
+                padding: 10px 20px;
+                margin-top: 20px;
+                cursor: pointer;
+            }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>This Is Toddle For Enabling Dark/Light Theme:-</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero vel dolorum est doloribus, voluptas corporis
+            placeat laboriosam omnis beatae magnam voluptate adipisci modi eveniet iste harum architecto blanditiis
+            suscipit
+            dolore!</p>
+
+        <button  class="dark-theme">Dark Theme</button>    
+    </div>
+</body>
+
+</html> -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Theme</title>
+    <style>
+      body {
+        height: 100vh;
+        width: 100%;
+        background-color: white;
+        color: black;
+        font-family: Arial, sans-serif;
+        transition:
+          background-color 2s,
+          color 2s;
+        padding: 20px;
+      }
+
+      body.dark-theme {
+        background-color: black;
+        color: white;
+      }
+
+      button {
+        padding: 10px 20px;
+        margin-top: 20px;
+        cursor: pointer;
+        border-radius: 20px;
+      }
+
+      button:active {
+        background-color: darkgray;
+        color: white;
+      }
+
+      body.dark-theme button {
+        background-color: white;
+        color: black;
+      }
+
+      body.dark-theme button:hover {
+        background-color: lightgray;
+        color: black;
+      }
+    </style>
+  </head>
+
+  <body class="dark-theme">
+    <div>
+        <button type="button">Toggle Dark Theme</button>
+      <h2
+        style="
+          font-size: 90px;
+          text-shadow:
+            4px 4px red,
+            -3px -3px blue;
+            font-family: cursive;
+            display: flex;
+            justify-content: center;
+        "
+      >
+        Dark Theme..!!!
+      </h2>
+      <p
+        style="
+        font-family: cursive;
+          margin: 0px 20px;
+          display: flex;
+          justify-content: center;
+          font-size: 50px;
+          text-shadow:
+            2px 2px green,
+            -1px -1px yellow;
+          font-weight: bolder;
+        "
+      >
+        This is a simple dark theme implementation :-
+      </p>
+      <div
+        style="
+          width: 1200px;
+          margin: 20px 5px;
+          display: flex;
+          text-align: center;
+          text-shadow:
+            1px 1px cyan,
+            -1px -1px magenta;
+          font-weight: bolder;
+        "
+      >
+        <p style="font-family: cursive;font-size: 25px;">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni
+          voluptate Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Repellendus commodi maxime earum porro perferendis tempore. Sapiente
+          similique magnam laboriosam hic ut distinctio rerum modi doloribus,
+          cum nihil odit aperiam maiores? Lorem ipsum dolor sit amet consectetu.
+        </p>
+      </div>
+      <div style="display: flex; justify-content: end">
+        <div
+          style="
+            height: 100px;
+            width: 300px;
+            margin: 0px 40px;
+            margin-top: -600px;
+            background: linear-gradient( to top, black, grey, white, white, grey, black);
+            border-radius: 50px;
+          "
+        ></div>
+      </div>
+    </div>
+    <script>
+      const toggleButton = document.querySelector("button");
+      const body = document.body;
+
+      toggleButton.addEventListener("click", () => {
+
+        body.classList.toggle("dark-theme");
+      });
+    </script>
+  </body>
+</html>
+

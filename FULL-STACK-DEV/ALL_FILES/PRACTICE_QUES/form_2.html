@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORM_DECORATION_2</title>
+  <style>
+    form {
+      border: solid black;
+      height: 500px;
+      width: 800px;
+      background-color: antiquewhite;
+      padding-left: 30px;
+      margin-top: 70px;
+    }
+
+    body {
+      align-items: center;
+      text-transform: capitalize;
+      display: flex;
+      flex-direction: column;
+      background-color: blue;
+      font-size: larger;
+    }
+
+    h1 {
+      margin-left: -2px;
+      text-transform: uppercase;
+    }
+
+    input[type="next"] {
+      font-size: 16px;
+      background-color: blue;
+      cursor: pointer;
+      text-align: center;
+      color: black;
+      margin-left: 2px;
+    }
+  </style>
+</head>
+
+<body>
+  <form action="#" method="get">
+    <div>
+      <h1>
+        registration
+      </h1>
+    </div>
+    <h3>persoanl details</h3>
+    <div1>
+      <br>
+      <div>
+        <label>full name</label>
+        <input type="text" name="name" placeholder="Enter your name" />
+        <label>date of birth</label>
+        <input type="date" name="d" />
+        <label>email</label>
+        <input type="email" name="name" placeholder="Enter your e-mail" />
+      </div>
+      <br>
+      <div>
+        <label>mobile number</label>
+        <input type="num" name="num" placeholder="Enter your number" maxlength="10" />
+        <label>gender</label>
+        <select id="gender" name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+        <label>occupation</label>
+        <input type="text" name="name" placeholder="Enter occupation" />
+        <br>
+        <br>
+        <h3>identity details</h3>
+    </div1>
+    <br>
+    <div2>
+      <div>
+        <label>id type</label>
+        <input type="text" name="name" placeholder="Enter ID Type" />
+        <label>id number</label>
+        <input type="text" name="name" placeholder="Enter ID number" />
+        <label>issue authority</label>
+        <input type="text" name="name" placeholder="Enter issue Department" />
+      </div>
+      <br>
+      <div>
+        <label>issue date</label>
+        <input type="text" name="name" placeholder="Enter ID issue date" />
+        <label>issue state</label>
+        <input type="text" name="name" placeholder="Enter ID issue state" />
+        <label>expiry date</label>
+        <input type="text" name="name" placeholder="Enter ID exiry date" />
+      </div>
+    </div2>
+    <div>
+      <br>
+      <input type="next" name="n" placeholder="Next" />
+    </div>
+  </form>
+</body>
+
+</html>

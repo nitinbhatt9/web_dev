@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Lamp Theme Toggle</title>
+    <style>
+        /* Base Page Styles & Smooth Animations */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            transition: background-color 0.6s ease, color 0.6s ease;
+            user-select: none;
+        }
+
+        /* --- THEME COLORS --- */
+        body.dark-theme {
+            background-color: #121212;
+            color: #eaba0c;
+        }
+
+        body.light-theme {
+            background-color: #eaba0c;
+            color: #1b3c5c;
+        }
+
+        /* --- UI CONTAINER --- */
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-top: 50px;
+            font-weight: 900;
+        }
+
+        /* --- INTERACTIVE LAMP ART --- */
+        .lamp-container {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            width: 140px;
+            height: 180px;
+        }
+
+        /* The main lampshade */
+        .lamp-shade {
+            width: 90px;
+            height: 65px;
+            background-color: #444444;
+            border-radius: 25px 25px 5px 5px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 3;
+            transition: background-color 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        /* The stand connecting shade to base */
+        .lamp-neck {
+            width: 8px;
+            height: 60px;
+            background-color: #666666;
+            margin: 0 auto;
+            position: relative;
+            z-index: 3;
+            transition: background-color 0.4s ease;
+        }
+
+        /* The bottom base support */
+        .lamp-base {
+            width: 50px;
+            height: 12px;
+            background-color: #555555;
+            border-radius: 6px 6px 0 0;
+            margin: 0 auto;
+            position: relative;
+            z-index: 3;
+            transition: background-color 0.4s ease;
+        }
+
+        /* --- RADIAL LIGHT BEAM GLOW --- */
+        .light-glow {
+            position: absolute;
+            top: 55px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0px;
+            height: 0px;
+            background: radial-gradient(circle, rgba(214, 210, 76, 0.7) 10%, rgba(202, 240, 85, 0.876) 50%, rgba(214, 212, 153, 0.744) 70%);
+            border-radius: 50%;
+            z-index: 1;
+            opacity: 0;
+            transition: width 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+                height 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+                opacity 0.5s ease;
+        }
+
+        /* --- ACTIVE STATE GENERATION (LIGHT MODE) --- */
+        body.light-theme .lamp-shade {
+            background-color: #fed553;
+            /* Glowing Yellow Shade */
+            box-shadow: 0 -5px 25px rgba(254, 213, 83, 0.5);
+        }
+
+        body.light-theme .lamp-neck,
+        body.light-theme .lamp-base {
+            background-color: #888888;
+        }
+
+        body.light-theme .light-glow {
+            width: 450px;
+            height: 450px;
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body class="dark-theme">
+
+    <div class="container">
+        <!-- Clicking this element fires the toggle event -->
+        <div class="lamp-container" id="lampToggle">
+            <div class="lamp-shade"></div>
+            <div class="lamp-neck"></div>
+            <div class="lamp-base"></div>
+            <div class="light-glow"></div>
+        </div>
+
+        <h1 id="statusText">Click On The LAMP..!!!!</h1>
+    </div>
+
+    <script>
+        // Track the elements
+        const lampToggle = document.getElementById('lampToggle');
+        const body = document.body;
+        const statusText = document.getElementById('statusText');
+
+        // Listen for the user's click interaction
+        lampToggle.addEventListener('click', () => {
+            // Toggle classes on the document body
+            if (body.classList.contains('dark-theme')) {
+                body.classList.remove('dark-theme');
+                body.classList.add('light-theme');
+                statusText.innerText = "Click the lamp to turn off the light!";
+            } else {
+                body.classList.remove('light-theme');
+                body.classList.add('dark-theme');
+                statusText.innerText = "Click the lamp to turn on the light!";
+            }
+        });
+    </script>
+</body>
+
+</html>
