@@ -18,10 +18,8 @@ export default function App() {
     data();
   }, [count]);
   return (
-    <div>
-      <p class=" flex justify-center font-black text-5xl font-serif bg-red-500 fixed top-0 right-0 left-0 ">
-        DYNAMIC API DATA FETCHING
-      </p>
+    <div style={{ height: "100vh" }}>
+      <p className="heading">DYNAMIC API DATA FETCHING</p>
       <div class="mt-20 inline-grid grid-cols-10 grid-rows-4 gap-1">
         {image.map((item) => (
           <img
@@ -35,23 +33,24 @@ export default function App() {
         ))}
       </div>
 
-      <div class=" h-20 flex justify-center gap-5 m-10">
+      <footer className="pagination-footer">
         <button
-          class="border-2 border-green-500  w-30 bg-green-500 hover:bg-green-800 hover:font-black cursor-pointer"
-          onClick={() => setCount(count + 1)}
-        >
-          NEXT
-        </button>
-        <button
-          class="border-2 border-red-500 w-30 bg-red-500 hover:bg-red-800 hover:font-black cursor-pointer"
-          onClick={() => setCount(count - 1)}
+          className="pagination-btn btn-prev"
+          onClick={() => setCount((prev) => Math.max(0, prev - 1))}
+          disabled={count === 0}
         >
           PREV
         </button>
-        <button class=" border-2 border-blue-500 w-30 h-20 bg-blue-600 font-black">
-          Page No : {count}
+
+        <button className="page-indicator">Page No : {count}</button>
+
+        <button
+          className="pagination-btn btn-next"
+          onClick={() => setCount((prev) => prev + 1)}
+        >
+          NEXT
         </button>
-      </div>
+      </footer>
     </div>
   );
 }

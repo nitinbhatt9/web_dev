@@ -1,4 +1,164 @@
 @import "tailwindcss";
 body{
-    background: black;
+    background-color: black;
 }
+
+/* Background Gradient & Layout for the Heading Banner */
+.heading {
+  /* Layout: Fixed across the top */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 85px;
+  z-index: 100;
+  
+  /* Centering the text inside the banner */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* Typography setup */
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-weight: 900;
+  font-size: 2.25rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+  
+  /* Premium Dark Red & Purple Background Gradient Matrix */
+  background: linear-gradient(
+    135deg,
+    rgba(124, 18, 18, 0.85),  /* Deep Crimson Red (Semi-Transparent) */
+    rgba(76, 5, 25, 0.9),     /* Dark Maroon Wine */
+    rgba(88, 28, 135, 0.85),  /* Deep Royal Purple */
+    rgba(59, 7, 100, 0.9)     /* Dark Velvet Purple */
+  );
+  background-size: 400% 400%;
+  
+  /* Frosted glass blur effect so the image grid melts beneath it */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  
+  /* High-end clean borders and shadows */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  
+  /* Text Shadow to make white text pop over the colored background */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  
+  /* Activates the smooth shifting movement */
+  animation: backgroundMove 10s ease infinite;
+}
+
+/* Smooth background grid shifting animation */
+@keyframes backgroundMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* IMPORTANT: Ensure your main image container is pushed down so it doesn't get cut off */
+.gallery-container {
+  margin-top: 110px;
+}
+
+
+/* Glassmorphic Footer Container at the Bottom */
+.pagination-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 85px;
+  z-index: 100;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  
+  /* Blurry glass effect blending over your moving body gradient */
+  background: rgba(1, 29, 74, 0.4); 
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Glass Transition Controls */
+.pagination-btn {
+  padding: 0.75rem 1.75rem;
+  font-weight: 800;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  
+  /* Frosted baseline styling */
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  
+  /* Smooth component response mapping */
+  transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Next / Forward Specific Highlights */
+.btn-next {
+  background: rgba(37, 99, 235, 0.15);
+  border: 1px solid rgba(37, 99, 235, 0.3);
+}
+
+.btn-next:hover:not(:disabled) {
+  background: rgba(37, 99, 235, 0.35);
+  border-color: #3b82f6;
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
+}
+
+/* Prev / Back Hover Actions */
+.btn-prev:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+/* Universal Focus Interactivity */
+.pagination-btn:active:not(:disabled) {
+  transform: scale(0.95);
+}
+
+/* Disabled State handling */
+.pagination-btn:disabled {
+  opacity: 0.25;
+  cursor: not-allowed;
+  background: rgba(255, 255, 255, 0.02);
+  border-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Dynamic Page Counter Style */
+.page-indicator {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.7);
+  background: rgba(0, 0, 0, 0.4);
+  padding: 0.5rem 1.25rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  letter-spacing: 0.05em;
+}
+
+/* Safe margin to prevent cards from hiding behind the footer */
+.gallery-container {
+  margin-bottom: 110px;
+}
+
+
+
