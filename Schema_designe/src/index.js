@@ -1,6 +1,6 @@
 import express from "express";
 import env from "node:process";
-import connectDB from "../../database/src/config/database.js";
+import connectDB from "../src/config/database.js";
 import dns from "node:dns/promises";
 import authRoutes from "./routes/auth.routes.js";
 
