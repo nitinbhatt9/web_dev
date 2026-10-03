@@ -1,39 +1,97 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dakr Theme</title>
+  <title>Dark Theme</title>
+  <style>
+    /* Global Styles & Variables */
+    :root {
+      --bg-color: white;
+      --text-color: black;
+    }
+
+    body.dark {
+      --bg-color: black;
+      --text-color: white;
+    }
+
+    body {
+      background: var(--bg-color);
+      color: var(--text-color);
+      transition: background 3s, color 1s;
+      font-family: system-ui, sans-serif;
+      margin: 0;
+      padding: 20px 0 0 0;
+    }
+
+    /* Layout Utilities */
+    .flex-center {
+      display: flex;
+      justify-content: center;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    /* Component Styles */
+    .theme {
+      border-radius: 20px;
+      padding: 8px 16px;
+      cursor: pointer;
+    }
+
+    .text-overlay p {
+      width: 500px;
+    }
+
+    .video-container {
+      display: flex;
+      justify-content: space-between;
+      margin-top: -145px;
+    }
+
+    video {
+      border-radius: 100%;
+      height: 80vh;
+      width: 80vh;
+      object-fit: cover;
+    }
+  </style>
 </head>
 
 <body>
-  <button class="theme" style="border-radius: 20px;">Toddle</button>
-  <h1>Dark Theme Implementation</h1>
-  <p style="text-align: center; width: 500px;">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, dolor quia
-    quisquam veniam amet provident eaque id praesentium quaerat, obcaecati
-    ratione ducimus ullam laborum sunt repellendus ab eius, adipisci
-    voluptatibus?
-  </p>
+
+  <!-- Theme Toggle -->
+  <div class="flex-center">
+    <button class="theme">Toggle</button>
+  </div>
+
+  <!-- Content Section -->
+  <div class="text-overlay">
+    <h1 class="flex-center">Dark Theme Implementation</h1>
+    <div class="flex-center">
+      <p class="text-center">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, dolor quia quisquam veniam amet provident eaque
+        id praesentium quaerat, obcaecati ratione ducimus ullam laborum sunt repellendus ab eius, adipisci voluptatibus?
+      </p>
+    </div>
+  </div>
+
+  <!-- Video Backgrounds -->
+  <div class="video-container">
+    <video src="15314922_1920_1080_30fps.mp4" autoplay loop muted playsinline></video>
+    <video src="15314922_1920_1080_30fps.mp4" autoplay loop muted playsinline></video>
+  </div>
+
+  <!-- Optimized Theme Script -->
   <script>
-    let theme = document.querySelector(".theme");
-
-    let currentTheme = "light";
-
-    theme.addEventListener("click", () => {
-      if (currentTheme == "light") {
-        currentTheme = "dark";
-        console.log("theme", currentTheme);
-        document.body.style.background = "black";
-        document.body.style.color = "white";
-      }
-      else {
-        currentTheme = "light";
-        console.log("theme", currentTheme);
-        document.body.style.background = "white";
-        document.body.style.color = "black";
-      }
+    const themeBtn = document.querySelector(".theme");
+    themeBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+      console.log("theme:", document.body.classList.contains("dark") ? "dark" : "light");
     });
   </script>
 </body>
