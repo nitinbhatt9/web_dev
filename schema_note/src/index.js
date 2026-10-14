@@ -1,0 +1,22 @@
+import express from "express";
+import env from "node:process";
+import connectDB from "../src/config/database.js";
+import dns from "node:dns/promises";
+import authRoutes from "./routes/auth.routes.js";
+
+dns.setServers(["1.1.1.1", "8.8.8.8"]);
+
+const app = express();
+const PORT = process.env.PORT || 3002;
+app.use(express.json());
+connectDB();
+
+app.get("/get", (req, res) => {
+  res.json({ message: "Here your auth schema will be initated" });
+});
+
+app.use("/api/v1/auth", authRoutes);
+
+app.listen(PORT, () => {
+  console.log(`Server Initated On This Port http://localhost:${PORT}`);
+});
