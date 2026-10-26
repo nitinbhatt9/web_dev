@@ -1,4 +1,4 @@
-import Auth from "../schema/pro_schema.js";
+import Auth from "../schema/auth_schema.js";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcryptjs";
 import { uploadFileToImage } from "../../services/storage.js";
@@ -12,7 +12,7 @@ export const register = async (req, res) => {
       email,
       password,
       gender,
-      phnum,
+      phone,
       address,
       title,
       discription,
@@ -37,14 +37,19 @@ export const register = async (req, res) => {
     const salt = await bcrypt.genSalt(10);
     const hashedPassword = await bcrypt.hash(password, salt);
 
-    const uploadFile = await uploadFileToImage(
-      image.buffer,
-      image.originalname,
-    );
-    console.log("uploadFile", uploadFile);
+    // FIX: Only upload if an image was actually provided in the request
+    let imageUrl = "";
+    if (image) {
+      const uploadFile = await uploadFileToImage(
+        image.buffer,
+        image.originalname,
+      );
+      console.log("uploadFile", uploadFile);
+      imageUrl = uploadFile.url;
+    }
 
     const newUser = new Auth({
-      phnum,
+      phone,
       name,
       username,
       email,
@@ -53,12 +58,12 @@ export const register = async (req, res) => {
       address,
       title,
       discription,
-      image: uploadFile.url,
+      image: imageUrl.url,
     });
 
     await newUser.save();
 
-    const token = jwt.sign({ id: newUser._id }, process.env.JWT_SECRET, {
+    const token = jwt.sign({ userId: newUser._id }, process.env.JWT_SECRET, {
       expiresIn: "1h",
     });
 
@@ -95,7 +100,7 @@ export const login = async (req, res) => {
       return res.status(400).json({ message: "Invalid credentials" });
     }
 
-    const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, {
+    const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET, {
       expiresIn: "1h",
     });
 

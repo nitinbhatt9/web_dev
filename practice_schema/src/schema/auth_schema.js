@@ -1,6 +1,6 @@
 import { Schema, model } from "mongoose";
 
-const proSchema = new Schema(
+const authSchema = new Schema(
   {
     name: {
       type: String,
@@ -30,7 +30,7 @@ const proSchema = new Schema(
       // default: "",
       enum: ["Male", "Female", "Others"],
     },
-    phnum: {
+    phone: {
       type: Number,
       required: [true, "Number is required"],
       trim: true,
@@ -52,6 +52,6 @@ const proSchema = new Schema(
   { timestamps: true },
 );
 
-const Auth = model("auth", proSchema);
+const Auth = model("auth", authSchema);
 
 export default Auth;
